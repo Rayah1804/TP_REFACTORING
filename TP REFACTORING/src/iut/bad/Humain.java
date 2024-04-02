@@ -9,7 +9,7 @@ public class Humain {
     public Humain() {
     }
     
-    
+   
     public Humain(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
@@ -17,9 +17,7 @@ public class Humain {
     }
     
     
-    public void details() {
-        System.out.println("Nom: " + nom);
-        System.out.println("Prénom: " + prenom);
-        System.out.println("Âge: " + age);
+    public String toString() {
+        return "Nom: " + nom + "\nPrénom: " + prenom + "\nÂge: " + age;
     }
 }
