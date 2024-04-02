@@ -4,22 +4,27 @@ public class Humain {
     protected String prenom;
     protected int age;
     protected Humain ami; 
+    protected int dureeAmitie;
 
     
     public Humain() {
+        this.dureeAmitie = 100; 
     }
 
-   
+    
     public Humain(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
+        this.dureeAmitie = 100; 
     }
 
-    
-    public void ami(Humain ami) {
+   
+    public void ami(Humain ami, int dureeAmitie) {
         this.ami = ami;
-    }    
+        this.dureeAmitie = dureeAmitie;
+    }
+
     
     public String toString() {
         return "Nom: " + nom + "\nPrénom: " + prenom + "\nÂge: " + age;
