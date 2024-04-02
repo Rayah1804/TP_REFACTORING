@@ -1,21 +1,25 @@
 package iut.bad;
-
-public class Humain implements Consommation{
+public class Humain {
     protected String nom;
     protected String prenom;
     protected int age;
+    protected Humain ami; 
+
     
-   
     public Humain() {
     }
-    
+
    
     public Humain(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
     }
+
     
+    public void ami(Humain ami) {
+        this.ami = ami;
+    }    
     
     public String toString() {
         return "Nom: " + nom + "\nPrénom: " + prenom + "\nÂge: " + age;
