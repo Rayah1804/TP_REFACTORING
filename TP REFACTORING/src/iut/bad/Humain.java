@@ -21,3 +21,7 @@ public class Humain {
         return "Nom: " + nom + "\nPrénom: " + prenom + "\nÂge: " + age;
     }
 }
+//Si on décide de déplacer la méthode `toString()` vers les sous-classes `Homme` et `Femme`,
+//chaque sous-classe aurait sa propre implémentation de la méthode `toString()`.
+// Cela peut être approprié si chaque sous-classe a des détails spécifiques à afficher.
+// Cependant, si les détails à afficher sont les mêmes pour toutes les sous-classes
